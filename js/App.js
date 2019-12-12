@@ -66,7 +66,7 @@ class App{
     if (pendingResourceNames.length === 0) {
       // animate and draw scene
       this.scene.update(this.gl, this.keysPressed);
-      this.overlay.innerHTML = "Ready.";
+      this.overlay.innerHTML = "";
     } else {
       this.overlay.innerHTML = `<font color="red">Loading: ${pendingResourceNames}</font>`;
     }
